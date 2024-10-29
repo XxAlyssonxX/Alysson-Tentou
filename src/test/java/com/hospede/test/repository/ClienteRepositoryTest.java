@@ -28,10 +28,7 @@ class ClienteRepositoryTest {
 	void testSalvarRepository() {
 		
 		//Given / Arrange
-		Cliente Cliente1 = new Cliente (null, "Otávio",
-											"15996373766",
-	                                        "46302556805",
-	                                        "571649105");
+		Cliente Cliente1 = new Cliente (null, "Jorge","15996373766","46302556805","571649105");
 		//When /Act
 		Cliente saveCliente = ClienteRepository.save(Cliente1);
 		
@@ -46,15 +43,9 @@ class ClienteRepositoryTest {
 		
 		//Given / Arrange
 		
-		Cliente Cliente1 = new Cliente(null, "Julia Maria",
-				"julia@gmail.com",
-				"(00)0000-0000",
-				"46302556805");
+		Cliente Cliente1 = new Cliente(null, "Julia","julia@gmail.com","(00)0000-0000","46302556805");
 		
-		Cliente Cliente2 = new Cliente(null, "Julio Fernando",
-				"julio@gmail.com",
-				"(00)0000-0000",
-				"46302556805");
+		Cliente Cliente2 = new Cliente(null, "Julio","julio@gmail.com","(00)0000-0000","46302556805");
 		
 		ClienteRepository.save(Cliente1);
 		ClienteRepository.save(Cliente2);
@@ -70,10 +61,7 @@ class ClienteRepositoryTest {
 		
 		//Given / Arrange
 		
-		Cliente Cliente1 = new Cliente(null, "Julio Fernando",
-				"julio@gmail.com",
-				"(00)0000-0000",
-				"46302556805");
+		Cliente Cliente1 = new Cliente(null, "Julio","julio@gmail.com",	"(00)0000-0000","46302556805");
 		
 		ClienteRepository.save(Cliente1);
 		
@@ -91,10 +79,7 @@ class ClienteRepositoryTest {
 		
 		//Given / Arrange
 		
-		Cliente Cliente1 = new Cliente(null, "Julio Fernando",
-				"julio@gmail.com",
-				"(00)0000-0000",
-				"46302556805");
+		Cliente Cliente1 = new Cliente(null, "Julio","julio@gmail.com","(00)0000-0000","46302556805");
 		
 		ClienteRepository.save(Cliente1);
 		
@@ -117,10 +102,7 @@ class ClienteRepositoryTest {
 		
 		//Given / Arrange
 		
-		Cliente Cliente1 = new Cliente(null, "Julio Fernando",
-				"julio@gmail.com",
-				"(00)0000-0000",
-				"46302556805");
+		Cliente Cliente1 = new Cliente(null, "Julio","julio@gmail.com","(00)0000-0000","46302556805");
 		
 		ClienteRepository.save(Cliente1);
 		

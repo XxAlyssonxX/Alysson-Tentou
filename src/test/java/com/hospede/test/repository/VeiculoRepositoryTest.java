@@ -28,10 +28,7 @@ class VeiculoRepositoryTest {
 	void testSalvarRepository() {
 		
 		//Given / Arrange
-		Veiculo Veiculo1 = new Veiculo (null, "Otávio",
-											"15996373766",
-	                                        "1",
-	                                        "571649105");
+		Veiculo Veiculo1 = new Veiculo (null, "Jorge","15996373766", "1", "571649105");
 		//When /Act
 		Veiculo saveVeiculo = VeiculoRepository.save(Veiculo1);
 		
@@ -46,15 +43,9 @@ class VeiculoRepositoryTest {
 		
 		//Given / Arrange
 		
-		Veiculo Veiculo1 = new Veiculo(null, "Julia Maria",
-				"julia@gmail.com",
-				"1",
-				"46302556805");
+		Veiculo Veiculo1 = new Veiculo(null, "Julia","julia@gmail.com","1","46302556805");
 		
-		Veiculo Veiculo2 = new Veiculo(null, "Julio Fernando",
-				"julio@gmail.com",
-				"1",
-				"46302556805");
+		Veiculo Veiculo2 = new Veiculo(null, "Julio","julio@gmail.com",	"1","46302556805");
 		
 		VeiculoRepository.save(Veiculo1);
 		VeiculoRepository.save(Veiculo2);
@@ -70,10 +61,7 @@ class VeiculoRepositoryTest {
 		
 		//Given / Arrange
 		
-		Veiculo Veiculo1 = new Veiculo(null, "Julio Fernando",
-				"julio@gmail.com",
-				"1",
-				"46302556805");
+		Veiculo Veiculo1 = new Veiculo(null, "Julio","julio@gmail.com","1",	"46302556805");
 		
 		VeiculoRepository.save(Veiculo1);
 		
@@ -85,16 +73,14 @@ class VeiculoRepositoryTest {
 		assertEquals(Veiculo1.getId(), saveVeiculo.getId());
 		
 	}
+	
 	@DisplayName("Testando Update")
 	@Test
 	void testUpdateVeiculo() {
 		
 		//Given / Arrange
 		
-		Veiculo Veiculo1 = new Veiculo(null, "Julio Fernando",
-				"julio@gmail.com",
-				"1",
-				"46302556805");
+		Veiculo Veiculo1 = new Veiculo(null, "Julio","julio@gmail.com","1","46302556805");
 		
 		VeiculoRepository.save(Veiculo1);
 		
@@ -116,10 +102,7 @@ class VeiculoRepositoryTest {
 		
 		//Given / Arrange
 		
-		Veiculo Veiculo1 = new Veiculo(null, "Julio Fernando",
-				"julio@gmail.com",
-				"1",
-				"46302556805");
+		Veiculo Veiculo1 = new Veiculo(null, "Julio","julio@gmail.com","1","46302556805");
 		
 		VeiculoRepository.save(Veiculo1);
 		
